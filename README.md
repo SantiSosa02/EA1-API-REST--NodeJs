@@ -1,10 +1,12 @@
 # Cine IUDigital
 
-API para publicar películas y series de la Institución Universitaria Digital de Antioquia. No incluye registro de usuarios ni módulos de seguridad, tal como lo pide el caso.
+Aplicación para publicar películas y series de la Institución Universitaria Digital de Antioquia. El panel está en React y consume la API. No incluye registro de usuarios ni módulos de seguridad, tal como lo pide el caso.
 
 ## Arquitectura
 
 La base es PostgreSQL y la conexión está en `backend/src/conexion.js`. Cada módulo pasa por tres capas: `backend/src/rutas` publica GET, POST, PUT y DELETE; `backend/src/servicios` aplica las reglas; `backend/src/funciones` lee y guarda en la base.
+
+El frontend está en `frontend`. Usa React, React Router, axios, Bootstrap y SweetAlert2. En desarrollo redirige `/api` hacia el puerto 4000.
 
 ## Módulos
 
@@ -29,6 +31,7 @@ npm run dev
 
 En Windows también puedes ejecutar `iniciar.bat`.
 
+- Panel: http://localhost:5173
 - API: http://localhost:4000
 
 ## API

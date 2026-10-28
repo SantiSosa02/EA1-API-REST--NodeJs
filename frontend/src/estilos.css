@@ -1,0 +1,219 @@
+:root {
+  --tinta: #1c2834;
+  --papel: #f3efe8;
+  --cobre: #b85c38;
+  --cobre-oscuro: #8d4324;
+  --linea: #e4ddd2;
+}
+
+body {
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app-nav {
+  background: #1c2834;
+  border-bottom: 3px solid var(--cobre);
+}
+
+.app-nav .navbar-brand {
+  color: #fff;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.app-nav .nav-link {
+  color: #d9e0e8;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  margin-left: 0.15rem;
+}
+
+.app-nav .nav-link.active,
+.app-nav .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.encabezado h1 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.encabezado p {
+  margin: 0.25rem 0 0;
+  color: #66707a;
+}
+
+.btn-cobre {
+  background: var(--cobre);
+  border-color: var(--cobre);
+  color: #fff;
+}
+
+.btn-cobre:hover {
+  background: var(--cobre-oscuro);
+  border-color: var(--cobre-oscuro);
+  color: #fff;
+}
+
+.tarjeta {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: 14px;
+  padding: 1rem 1.1rem 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  border-top: 4px solid var(--tono, var(--cobre));
+  box-shadow: 0 8px 20px rgba(28, 40, 52, 0.04);
+}
+
+.tarjeta:hover {
+  color: inherit;
+  transform: translateY(-2px);
+}
+
+.tarjeta span {
+  color: #66707a;
+  font-size: 0.92rem;
+}
+
+.tarjeta strong {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 0.2rem 0;
+}
+
+.tarjeta small {
+  color: var(--cobre-oscuro);
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(28, 40, 52, 0.04);
+}
+
+.panel .table {
+  margin: 0;
+}
+
+.panel thead th {
+  background: #faf7f3;
+  color: #5d6770;
+  font-size: 0.82rem;
+  font-weight: 650;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom-color: var(--linea);
+}
+
+.panel td,
+.panel th {
+  vertical-align: middle;
+}
+
+.panel td {
+  border-color: #f0ebe4;
+}
+
+.portada,
+.portada-vacia {
+  width: 48px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #ece7e0;
+}
+
+.portada-vacia {
+  display: inline-block;
+}
+
+.ficha {
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(28, 40, 52, 0.05);
+}
+
+.ficha-portada {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background: #ece7e0;
+}
+
+.ficha-vacia {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  color: #8a8178;
+  background: linear-gradient(160deg, #d9cfc3, #efe8df);
+}
+
+.ficha-cuerpo {
+  padding: 0.85rem 0.95rem 1rem;
+}
+
+.ficha-cuerpo h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem;
+}
+
+.ficha-cuerpo p {
+  margin: 0 0 0.35rem;
+  color: #66707a;
+  font-size: 0.9rem;
+}
+
+.vista-portada {
+  display: block;
+  width: 92px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 0.75rem;
+  background: #ece7e0;
+}
+
+.modal-content {
+  border: 0;
+  border-radius: 16px;
+}
+
+.modal-header {
+  border-bottom-color: var(--linea);
+}
+
+.modal-footer {
+  border-top-color: var(--linea);
+}
+
+.form-control,
+.form-select {
+  border-color: #ddd4c8;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #c9896e;
+  box-shadow: 0 0 0 0.2rem rgba(184, 92, 56, 0.15);
+}
